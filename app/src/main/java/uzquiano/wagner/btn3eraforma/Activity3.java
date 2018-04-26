@@ -22,6 +22,7 @@ public class Activity3 extends AppCompatActivity {
     private ImageButton imageButtonWeb;
     private ImageButton imageButtonCamera;
     private final int PHONE_CALL_CODE = 100;
+
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,10 +38,10 @@ public class Activity3 extends AppCompatActivity {
 
         imageButtonPhone.setOnClickListener(new View.OnClickListener() {
 
-            public void onClick(View v){
+            public void onClick(View v) {
                 String NroTelefono = editTextPhone.getText().toString();
-                if(NroTelefono != null){
-                    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+                if (NroTelefono != null) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                         requestPermissions(new String[]{Manifest.permission.CALL_PHONE}, PHONE_CALL_CODE);
                         //NewerVersions();
                     } else {
@@ -49,10 +50,10 @@ public class Activity3 extends AppCompatActivity {
                 }
             }
 
-            private void olderVersions(String NroTelefono){
-                Intent intentLlamar = new Intent(Intent.ACTION_CALL, Uri.parse("Tel:"+NroTelefono));
-                if(verificarPermiso(Manifest.permission.CALL_PHONE)){
-                    startActivity(intentLlamar);
+            private void olderVersions(String NroTelefono) {
+                Intent intentLlamar = new Intent(Intent.ACTION_CALL, Uri.parse("Tel:" + NroTelefono));
+                if (verificarPermiso(Manifest.permission.CALL_PHONE)) {
+                       startActivity(intentLlamar);
                 } else {
                     Toast.makeText(Activity3.this, "Sin permiso para llamar", Toast.LENGTH_LONG).show();
                 }
