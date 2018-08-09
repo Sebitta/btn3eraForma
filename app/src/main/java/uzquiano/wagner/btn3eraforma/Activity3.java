@@ -65,7 +65,13 @@ public class Activity3 extends AppCompatActivity {
         });
 
 
-
+        imageButtonCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentCamara = new Intent("android.media.action.IMAGE_CAPTURE");
+                startActivity(intentCamara);
+            }
+        });
 
     }
 

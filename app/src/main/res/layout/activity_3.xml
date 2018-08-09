@@ -44,6 +44,7 @@
 
     <ImageButton
         android:id="@+id/imageButtonCamera"
+        android:background="@android:color/holo_green_light"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
