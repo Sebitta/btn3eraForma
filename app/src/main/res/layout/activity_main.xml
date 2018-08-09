@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.367" />
 
     <Switch
-        android:id="@+id/switchcito"
+        android:id="@+id/switchs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Switch"
@@ -58,7 +58,7 @@
         app:layout_constraintVertical_bias="0.518" />
 
     <CheckBox
-        android:id="@+id/checkBoxito"
+        android:id="@+id/CheckBoxs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CheckBox"

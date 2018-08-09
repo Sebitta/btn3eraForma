@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn;
     private CheckBox chb;
     private Switch swt;
-    private final String Saludo = "Hola a todos desde activity";
+    private final String Saludo = "Hola venito camela";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        chb = (CheckBox) findViewById(R.id.checkBoxito);
+        chb = (CheckBox) findViewById(R.id.CheckBoxs);
         chb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,11 +42,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        swt = (Switch) findViewById(R.id.switchcito);
+        swt = (Switch) findViewById(R.id.switchs);
         swt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "nintendo Switch", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Switch", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -54,12 +54,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void miMetodo(View v) {
         //int a = 4 ;
-        Toast.makeText(MainActivity.this, "click en el boton", Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "Click en el boton", Toast.LENGTH_SHORT).show();
     }
 
 
     public void onClick(View v) {
-        Toast.makeText(MainActivity.this, "boton presionado", Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "Boton presionado", Toast.LENGTH_SHORT).show();
     }
 
 
